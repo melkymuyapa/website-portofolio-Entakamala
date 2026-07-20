@@ -1,0 +1,160 @@
+/* ==========================================================================
+   1. RESET & GLOBAL STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. NAVIGATION
+   ========================================================================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3779AF;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.logo span {
+    color: #3779AF;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3779AF;
+}
+
+/* ==========================================================================
+   3. SECTIONS & CARDS
+   ========================================================================== */
+section {
+    padding: 50px 5%;
+}
+
+h2 {
+    border-bottom: 3px solid #3779AF;
+    color: #2c3e50;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 25px;
+}
+
+/* ==========================================================================
+   4. COMPONENTS
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    background-color: #3779AF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2c608a;
+}
+
+/* ==========================================================================
+   5. HALAMAN LOGIN (Warna Diubah)
+   ========================================================================== */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Warna latar belakang baru: Biru lembut yang lebih modern */
+    background-color: #eef2f3;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    /* Warna tombol senada dengan identitas brand */
+    background-color: #3779AF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-card button:hover {
+    background-color: #2c608a;
+}
